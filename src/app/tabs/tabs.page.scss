@@ -1,1 +1,14 @@
-
+.covid-navigator {
+    &__icon-global {
+        background-image: url(../../assets/icon/global-icon.svg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+    &__home-icon {
+        background-image: url(../../assets/icon/home-icon.svg);
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+}

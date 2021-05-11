@@ -11,18 +11,18 @@
         <div class="content-summary__detail">
             <div class="content-summary__detail__item">
                 <div class="content-summary__detail__title">Total de casos</div>
-                <div class="content-summary__detail__total">5.593.728</div>
-                <div class="content-summary__detail__new">+550</div>
+                <div class="content-summary__detail__total">{{item.TotalConfirmed}}</div>
+                <div class="content-summary__detail__new">+{{item.NewConfirmed}}</div>
             </div>
             <div class="content-summary__detail__item">
                 <div class="content-summary__detail__title">Recuperados</div>
-                <div class="content-summary__detail__total">5.593.728</div>
-                <div class="content-summary__detail__new">+550</div>
+                <div class="content-summary__detail__total">{{item.TotalRecovered}}</div>
+                <div class="content-summary__detail__new">+{{item.NewRecovered}}</div>
             </div>
             <div class="content-summary__detail__item">
                 <div class="content-summary__detail__title">Muertes</div>
-                <div class="content-summary__detail__total">5.593.728</div>
-                <div class="content-summary__detail__new">+550</div>
+                <div class="content-summary__detail__total">{{item.TotalDeaths}}</div>
+                <div class="content-summary__detail__new">+{{item.NewDeaths}}</div>
             </div>
         </div>
     </div>
