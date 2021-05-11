@@ -4,29 +4,29 @@
         Países
     </div>
 
-    <div class="content-summary">
+    <div class="content-summary" *ngFor="let item of countries">
     <div class="content-summary__content">
-        <div class="content-summary__content__label">Colombia</div>
+        <div class="content-summary__content__label">{{item.Country}}</div>
 
-          <img class="content-summary__content__icon-flag" src="https://flagcdn.com/co.svg" alt="">
+          <img class="content-summary__content__icon-flag" [src]="'https://flagcdn.com/'+item.CountryCode.toLocaleLowerCase()+'.svg'"/>
 
     </div>
 
         <div class="content-summary__detail">
             <div class="content-summary__detail__item">
                 <div class="content-summary__detail__title">Total de casos</div>
-                <div class="content-summary__detail__total">5.593.728</div>
-                <div class="content-summary__detail__new">+550</div>
+                <div class="content-summary__detail__total">{{item.TotalConfirmed}}</div>
+                <div class="content-summary__detail__new">+{{item.NewConfirmed}}</div>
             </div>
             <div class="content-summary__detail__item">
                 <div class="content-summary__detail__title">Recuperados</div>
-                <div class="content-summary__detail__total">5.593.728</div>
-                <div class="content-summary__detail__new">+550</div>
+                <div class="content-summary__detail__total">{{item.TotalRecovered}}</div>
+                <div class="content-summary__detail__new">+{{item.NewRecovered}}</div>
             </div>
             <div class="content-summary__detail__item">
                 <div class="content-summary__detail__title">Muertes</div>
-                <div class="content-summary__detail__total">5.593.728</div>
-                <div class="content-summary__detail__new">+550</div>
+                <div class="content-summary__detail__total">{{item.TotalDeaths}}</div>
+                <div class="content-summary__detail__new">+{{item.NewDeaths}}</div>
             </div>
         </div>
     </div>
