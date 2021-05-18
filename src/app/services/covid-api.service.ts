@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CovidApiService {
 
-  url = 'https://api.covid19api.com/';
+  url = 'https://api.covid19api.com/summary';
 
   constructor(private http: HttpClient) {
 

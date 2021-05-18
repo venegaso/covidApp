@@ -55,23 +55,23 @@
                         padding-left: 12px;
                     }
                 }
-                &__title {
-                    font-family: OpenSans;
-                    font-size: 14px;
-                    line-height: 1.36;
-                    color: #333333;
-                }
-                &__total {
-                    font-family: OpenSans;
-                    font-size: 16px;
-                    line-height: 1.5;
-                    color: #10133d;
-                }
-                &__new {
-                    font-size: 12px;
-                    line-height: 1.42;
-                    color: #5c5c5c;
-                }
+            }
+            &__title {
+                font-family: OpenSans;
+                font-size: 14px;
+                line-height: 1.36;
+                color: #333333;
+            }
+            &__total {
+                font-family: OpenSans;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #10133d;
+            }
+            &__new {
+                font-size: 12.4px;
+                line-height: 1.42;
+                color: #5c5c5c;
             }
         }
     }
