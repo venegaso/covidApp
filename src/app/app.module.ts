@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { CovidApiService } from './services/covid-api.service';
 
 import { HttpClientModule } from '@angular/common/http';
+import { OrderModule } from 'ngx-order-pipe';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -16,7 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HttpClientModule],
+    HttpClientModule,
+    OrderModule
+  ],
   providers: [CovidApiService,{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

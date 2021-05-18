@@ -11,18 +11,18 @@
         <div class="content-summary__detail">
             <div class="content-summary__detail__item">
                 <div class="content-summary__detail__title">Total de casos</div>
-                <div class="content-summary__detail__total">{{this.dataCovid.TotalConfirmed}}</div>
-                <div class="content-summary__detail__new">+{{this.dataCovid.NewConfirmed}}</div>
+                <div class="content-summary__detail__total">{{this.dataTotal.TotalConfirmed}}</div>
+                <div class="content-summary__detail__new">+{{this.dataTotal.NewConfirmed}}</div>
             </div>
             <div class="content-summary__detail__item">
                 <div class="content-summary__detail__title">Recuperados</div>
-                <div class="content-summary__detail__total">{{this.dataCovid.TotalRecovered}}</div>
-                <div class="content-summary__detail__new">+{{this.dataCovid.NewRecovered}}</div>
+                <div class="content-summary__detail__total">{{this.dataTotal.TotalRecovered}}</div>
+                <div class="content-summary__detail__new">+{{this.dataTotal.NewRecovered}}</div>
             </div>
             <div class="content-summary__detail__item">
                 <div class="content-summary__detail__title">Muertes</div>
-                <div class="content-summary__detail__total">{{this.dataCovid.TotalDeaths}}</div>
-                <div class="content-summary__detail__new">+{{this.dataCovid.NewDeaths}}</div>
+                <div class="content-summary__detail__total">{{this.dataTotal.TotalDeaths}}</div>
+                <div class="content-summary__detail__new">+{{this.dataTotal.NewDeaths}}</div>
             </div>
         </div>
     </div>
@@ -49,41 +49,20 @@
     </div>
 
     <div class="countries-title">
-        <div class="countries-title__label">
-            Top Países
-        </div>
-        <div class="countries-title__link" (click)="detailCountries()">
-            Ver todos
-        </div>
-
+        <div class="countries-title__label">Top Países</div>
+        <div class="countries-title__link" (click)="detailCountries()">Ver todos</div>
     </div>
 
     <div class="countries">
-        <div class="countries__box">
-            <img class="countries__box__flag" src="https://flagcdn.com/co.svg" alt="">
-            <div class="countries__box__label">
-                Italy
-            </div>
-            <div class="countries__box__new">
-                +1.500
-            </div>
-        </div>
-        <div class="countries__box">
-            <img class="countries__box__flag" src="https://flagcdn.com/co.svg" alt="">
-            <div class="countries__box__label">
-                Italy
-            </div>
-            <div class="countries__box__new">
-                +1.500
-            </div>
-        </div>
-        <div class="countries__box">
-            <img class="countries__box__flag" src="https://flagcdn.com/co.svg" alt="">
-            <div class="countries__box__label">
-                Italy
-            </div>
-            <div class="countries__box__new">
-                +1.500
+        <div *ngFor="let item of dataCountries; let i = index">
+            <div class="countries__box" *ngIf="i<3">
+                <img class="countries__box__flag" [src]="'https://flagcdn.com/' + item.CountryCode.toLocaleLowerCase()+'.svg'" alt="">
+                <div class="countries__box__label">
+                    {{item.Country}}
+                </div>
+                <div class="countries__box__new">
+                    {{item.TotalConfirmed}}
+                </div>
             </div>
         </div>
     </div>
