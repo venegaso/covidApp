@@ -37,6 +37,7 @@ export class Tab1Page implements OnInit{
     this._CovidApiService.getCovid().subscribe((resp: any) => {
       this.dataTotal = resp.Global;
       this.dataCountries = this.orderPipe.transform(resp.Countries, 'TotalConfirmed',true);
+      this.dataCountries = this.dataCountries.filter((item, index) => index <3);
       console.log(this.dataCountries);
       loading.dismiss();
     });

@@ -5,12 +5,12 @@
     </div>
 
     <div class="content-summary" *ngFor="let item of countries">
-        <div class="content-summary__content">
-            <div class="content-summary__content__label">{{item.Country}}</div>
+    <div class="content-summary__content">
+        <div class="content-summary__content__label">{{item.Country}}</div>
 
-            <img class="content-summary__content__icon-flag" [src]="'https://flagcdn.com/'+item.CountryCode.toLocaleLowerCase()+'.svg'" />
+          <img class="content-summary__content__icon-flag" [src]="'https://flagcdn.com/'+item.CountryCode.toLocaleLowerCase()+'.svg'"/>
 
-        </div>
+    </div>
 
         <div class="content-summary__detail">
             <div class="content-summary__detail__item">
