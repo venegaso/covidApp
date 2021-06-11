@@ -1,0 +1,9 @@
+<ion-content class="noticias.page" fullscreen>
+  <div class="covid-noticias__title">Noticias</div>
+
+<ion-card *ngFor='let myNews of dataNews'>
+    <img class="img" [src]='myNews.urlToImage'/>
+   <ion-card-subtitle>{{myNews.date}}</ion-card-subtitle>
+    <ion-card-content>{{myNews.description}}</ion-card-content>
+</ion-card>
+</ion-content>

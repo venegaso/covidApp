@@ -1,0 +1,17 @@
+.img {
+    float: right;
+    width: 150px;
+    height: 150px;
+    padding: 7%;
+    align-items: center;
+}
+
+.covid-noticias {
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: #10133d;
+        margin: 17px 28px 10px 10px;
+    }
+}

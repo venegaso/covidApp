@@ -7,7 +7,6 @@
         margin: 28px 16px 16px 16px;
     }
     &__title {
-        font-family: OpenSans;
         font-size: 24px;
         font-weight: bold;
         line-height: 1.5;
@@ -26,7 +25,6 @@
             display: flex;
             justify-content: space-between;
             &__label {
-                font-family: OpenSans;
                 font-size: 16px;
                 font-weight: bold;
                 line-height: 1.5;
@@ -55,13 +53,11 @@
                     }
                 }
                 &__title {
-                    font-family: OpenSans;
                     font-size: 14px;
                     line-height: 1.36;
                     color: #333333;
                 }
                 &__total {
-                    font-family: OpenSans;
                     font-size: 16px;
                     line-height: 1.5;
                     color: #10133d;

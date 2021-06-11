@@ -1,17 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="tab3.page" fullscreen>
+  <div class="covid-sintomas__title">Síntomas</div>
+  <div class="covid-sintomas__back"></div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="content-sintomas">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col>
+          <div class="content-sintomas__circulo">
+            <img class="img" src="../../assets/icon/fiebre.svg" />
+          </div>
+          <div class="text">FIEBRE</div>
+        </ion-col>
+        <ion-col>
+          <div class="content-sintomas__circulo">
+            <img class="img" src="../../assets/icon/tos_seca.svg" />
+          </div>
+          <div class="text">TOS SECA</div>
+        </ion-col>
+        <ion-col>
+          <div class="content-sintomas__circulo">
+            <img class="img" src="../../assets/icon/dolor_garganta.svg" />
+          </div>
+          <div class="text">DOLOR DE GARGANTA</div>
+        </ion-col>
+      </ion-row>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+      <ion-row>
+        <ion-col>
+          <div class="content-sintomas__circulo">
+            <img class="img" src="../../assets/icon/problemas_respiratorios.svg" />
+          </div>
+          <div class="text">PROBLEMAS RESPIRATORIOS</div>
+        </ion-col>
+        <ion-col>
+          <div class="content-sintomas__circulo">
+            <img class="img" src="../../assets/icon/congestion_nasal.svg" />
+          </div>
+          <div class="text">CONGESTION NASAL</div>
+        </ion-col>
+        <ion-col>
+          <div class="content-sintomas__circulo">
+            <img class="img" src="../../assets/icon/diarrea.svg" />
+          </div>
+          <div class="text">DIARREA</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>

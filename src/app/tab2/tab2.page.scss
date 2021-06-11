@@ -1,32 +1,36 @@
-.covid-detail-prevencion {
+.covid-prevencion {
     &__back {
         background-image: url(../../assets/fondo1.svg);
         background-repeat: no-repeat;
-        width: 315px;
-        height: 451px;
+        width: 418.6px;
+        height: 599.12px;
         margin: 70px 30px 10px 40px;
+        &__rectangulo {
+            width: 120px;
+            height: 115px;
+            background: #ffffff;
+            -webkit-box-shadow: 0px 5px 26px 8px rgba(51, 51, 51, 0.3);
+            border-radius: 29.33px;
+            margin: 0 0 40px;
+            text-align: center;
+            font-size: small;
+            vertical-align: 20%;
+            #centrar {
+                width: 50px;
+                height: 50px;
+                display: block;
+                justify-content: space-around;
+                margin: auto;
+                margin-top: auto;
+            }
+        }
     }
     &__title {
-        font-family: OpenSans;
         font-size: 24px;
         font-weight: bold;
         line-height: 1.5;
         color: #10133d;
-        margin: 25px 44px 5px 21.33px;
-    }
-    .content-drop {
-        display: flex;
-        padding: 16px 23px 16px 16px;
-        border-radius: 12px;
-        --webkit-backdrop-filter: blur(30px);
-        box-shadow: 0 0 6px 0 rgba(50, 51, 51, 0.1);
-        background-color: var(--color-white);
-        margin: 16px;
-        &__icon-lavado {
-            background-image: url(../../assets/icon/lavate.svg);
-            background-repeat: no-repeat;
-            width: 24px;
-            height: 24px;
-        }
+        margin-left: 16px;
+        margin: 17px 28px 10px 10px;
     }
 }

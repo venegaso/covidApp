@@ -1,0 +1,15 @@
+<ion-content class="telefonos.page" fullscreen>
+  <div class="covid-telefonos__title">Lineas de atención</div>
+
+<ion-label *ngFor = "let item of departamentos">
+<ion-list-header>
+  <ion-label class="encabezado">{{item.dep}}</ion-label>
+</ion-list-header>
+
+<!-- List Header with Button -->
+<ion-list-header>
+  <ion-label><img src="../../assets/icon/telefonos.svg"></ion-label>
+  <ion-label class="letra">{{item.tel}}</ion-label>
+</ion-list-header>
+</ion-label>
+</ion-content>

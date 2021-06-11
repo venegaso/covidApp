@@ -24,6 +24,14 @@ const routes: Routes = [
         loadChildren: () => import('../detail-countries/detail-countries.module').then( m => m.DetailCountriesPageModule)
       },
       {
+        path: 'noticias',
+        loadChildren: () => import('../noticias/noticias.module').then(m => m.NoticiasPageModule)
+      },
+      {
+        path: 'telefonos',
+        loadChildren: () => import('../telefonos/telefonos.module').then(m => m.TelefonosPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
